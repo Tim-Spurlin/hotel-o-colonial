@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { MapPin, Footprints, Clock } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
+import { InteractiveMap } from '@/components/InteractiveMap'
 
 const attractions = [
   { name: 'Market Square Research Center', distance: '0.1 miles', walk: '2 minutes', icon: MapPin },
@@ -35,6 +36,10 @@ export function StrategicGeography() {
             cultural, culinary, and civic life of Brownsville. Leave your car keys in your room—many of 
             the city's most significant attractions are accessible via a scenic stroll.
           </p>
+
+          <div className="mb-16">
+            <InteractiveMap />
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {attractions.map((attraction, index) => (
