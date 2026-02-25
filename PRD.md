@@ -8,7 +8,7 @@ To translate the visceral experience of stepping into Hotel O Colonial Inn into 
 
 **Experience Qualities**:
 1. **Immersive** — Every scroll should feel like walking through the inn's historic archways, with cinematic imagery and rich prose that transports visitors into the heart of downtown Brownsville's cultural renaissance.
-2. **Intimate** — The website must capture the personal touch of Gonzalo and Senior Aguilar's care, making visitors feel like honored guests in a private hacienda rather than customers on a corporate booking platform.
+2. **Intimate** — The website must capture the personal touch of the Aguilar family's care, with patriarch Señor Gonzalo Aguilar and his 18-year-old grandson ensuring every guest feels like honored family rather than customers on a corporate booking platform.
 3. **Timeless** — Design choices should reflect the building's 1850-1915 architectural heritage while embracing modern web standards, creating an experience that feels both classic and effortlessly contemporary.
 
 **Complexity Level**: Light Application (multiple features with basic state)

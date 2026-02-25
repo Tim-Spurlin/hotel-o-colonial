@@ -103,9 +103,10 @@ export function AguilarLegacy() {
             <div className="bg-accent/10 border-l-4 border-accent p-6 my-8">
               <p className="text-lg font-medium text-foreground mb-4">Professional Management & Service</p>
               <p className="text-muted-foreground">
-                The hotel is managed by the dedicated Aguilar family, with patriarch Gonzalo and his grandson 
-                Señor Aguilar ensuring that every guest receives personalized attention and that the historic 
-                property's systems function seamlessly. The 24-hour front desk ensures assistance is always available.
+                The hotel is managed by the dedicated Aguilar family, with patriarch Gonzalo (who is known as 
+                Señor Aguilar) and his 18-year-old grandson ensuring that every guest receives personalized 
+                attention and that the historic property's systems function seamlessly. The 24-hour front desk 
+                ensures assistance is always available.
               </p>
             </div>
           </div>

@@ -196,8 +196,8 @@ Hub for traditional flavors and culinary innovation:
 ## Management & Service Philosophy
 
 The hotel is managed by the Aguilar family:
-- **Patriarch Gonzalo**: Expert in maintaining the building's historic systems and infrastructure
-- **Señor Aguilar** (his grandson): Handles modern technical demands including electronic key systems and digital hospitality technology
+- **Señor Gonzalo Aguilar** (the patriarch): Expert in maintaining the building's historic systems and infrastructure, approaching seventy years of age with remarkable vitality
+- **His 18-year-old grandson**: Handles modern technical demands including electronic key systems and digital hospitality technology with exceptional technical proficiency
 
 **Service Approach**: Guests are treated as welcomed members of a private home rather than customers in a commercial space, creating a personal connection that transforms the stay from transaction to cultural immersion.
 

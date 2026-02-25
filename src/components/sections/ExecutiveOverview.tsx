@@ -43,8 +43,8 @@ export function ExecutiveOverview() {
 
             <p>
               The establishment maintains family-owned hospitality under the management of the Aguilar family, with 
-              patriarch Gonzalo and his grandson Señor Aguilar ensuring attentive service and careful preservation of 
-              the historic property's character and systems.
+              patriarch Señor Gonzalo Aguilar and his 18-year-old grandson ensuring attentive service and careful 
+              preservation of the historic property's character and systems.
             </p>
 
             <p>
