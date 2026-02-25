@@ -42,18 +42,17 @@ export function ExecutiveOverview() {
             </p>
 
             <p>
-              In an era where the human element is often replaced by automated interfaces, the Hotel O Colonial Inn 
-              prioritizes intergenerational care. The presence of the Aguilar family—specifically the patriarch Gonzalo 
-              and his grandson, Senior Aguilar—ensures that the operational philosophy remains rooted in community values. 
-              This commitment to care transforms the guest experience from a simple transaction into an entry into an 
-              extended family network. 
+              The establishment maintains family-owned hospitality under the management of the Aguilar family, with 
+              patriarch Gonzalo and his grandson Señor Aguilar ensuring attentive service and careful preservation of 
+              the historic property's character and systems.
             </p>
 
             <p>
-              The following journey explores the various dimensions of this unique establishment, from its 19th-century 
-              foundations to its role as a modern gateway to the cultural renaissance of downtown Brownsville. Here, 
-              history breathes. Here, hospitality is an art form. Here, you will discover what it means to be truly 
-              welcomed home.
+              The following journey explores the various dimensions of this unique establishment—from its role in Civil 
+              War intelligence operations to its Spanish Colonial Revival architecture, from its 18 meticulously maintained 
+              rooms to its unbeatable walkability to the Mitte Cultural District, Gladys Porter Zoo, and the international 
+              bridge to Matamoros. Here, history breathes. Here, downtown Brownsville's renaissance unfolds at your doorstep. 
+              Here, you discover an authentic "hidden pocket of Mexico" in the heart of South Texas.
             </p>
           </div>
         </motion.div>

@@ -4,7 +4,7 @@ A digital sanctuary where history breathes and Mexican hospitality embraces the 
 
 ## Mission Statement
 
-To translate the visceral experience of stepping into Hotel O Colonial Inn into a digital journey that honors the building's 170-year legacy, celebrates the Aguilar family's intergenerational stewardship, and invites travelers to discover a "hidden pocket of Mexico" where authenticity, warmth, and cultural richness await.
+To translate the visceral experience of stepping into Hotel O Colonial Inn into a digital journey that honors the building's 170-year legacy from 1850, showcases its architectural and historical significance, presents comprehensive room availability and booking options, and invites travelers to discover a "hidden pocket of Mexico" where authenticity, walkable cultural attractions, and exceptional value await.
 
 **Experience Qualities**:
 1. **Immersive** — Every scroll should feel like walking through the inn's historic archways, with cinematic imagery and rich prose that transports visitors into the heart of downtown Brownsville's cultural renaissance.
@@ -25,11 +25,11 @@ This is a multi-page storytelling website with rich content sections, smooth nav
 - **Success criteria**: Visitors immediately feel transported; bounce rate decreases; time on page increases.
 
 ### 2. Storytelling Content Sections
-- **Functionality**: Multiple full-width sections presenting the hotel's narrative: Executive Overview, Aguilar Legacy, Living Heritage Building, Strategic Geography, Cultural District, Culinary Ecosystem, Guest Testimonials.
-- **Purpose**: Transform the research document's rich prose into a visual and textual journey that builds emotional connection and desire to visit.
+- **Functionality**: Multiple full-width sections presenting the hotel's narrative: Executive Overview, Historic Architecture (1850-1915), Room Accommodations & Amenities, Pricing & Booking Platforms, Strategic Geography, Cultural District Walkability, Culinary Ecosystem, Guest Testimonials.
+- **Purpose**: Transform the research document's rich prose into a visual and textual journey focusing on the building's history, current availability, and location advantages.
 - **Trigger**: User scrolls through homepage.
-- **Progression**: Scroll into viewport → Section content fades in with staggered animations → Text becomes readable with elegant typography → Images reveal with subtle parallax or zoom effects → Interactive elements (maps, timelines) invite exploration.
-- **Success criteria**: Visitors read multiple sections; engagement metrics show deep content consumption; emotional connection established before any booking CTA appears.
+- **Progression**: Scroll into viewport → Section content fades in with staggered animations → Architectural details, room configurations, and pricing matrices become readable → Images reveal with subtle parallax → Interactive maps and booking links invite action.
+- **Success criteria**: Visitors understand the historic significance, know exactly what rooms are available and at what price, and feel confident about booking options before reaching the booking partner page.
 
 ### 3. Multi-Page Navigation System
 - **Functionality**: Fixed header navigation with links to Our Story, Rooms, Experiences, Dining & Attractions, Gallery, Book Your Stay, and Contact pages.

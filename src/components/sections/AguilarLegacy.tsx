@@ -1,11 +1,28 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Users, Wrench, Lightning } from '@phosphor-icons/react'
+import { Bed, WifiHigh, Television, Snowflake, Bathtub, Coffee } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
+import { Separator } from '@/components/ui/separator'
 
 export function AguilarLegacy() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  const roomTypes = [
+    { name: 'King Bed Non-Smoking', beds: '1 King Sized Bed', capacity: '2 Guests', sqft: '150 sq ft' },
+    { name: 'Full Bed Non-Smoking', beds: '1 Full Sized Bed', capacity: '2 Guests', sqft: '150 sq ft' },
+    { name: '2 Full Beds Non-Smoking', beds: '2 Full Sized Beds', capacity: '4 Guests', sqft: '150 sq ft' },
+    { name: '2 Queen Beds Non-Smoking', beds: '2 Queen Sized Beds', capacity: '4 Guests', sqft: '150 sq ft' },
+  ]
+
+  const amenities = [
+    { icon: Snowflake, label: 'Air Conditioning' },
+    { icon: WifiHigh, label: 'High-Speed WiFi (50+ Mbps)' },
+    { icon: Television, label: '32" Flat Screen TV' },
+    { icon: Coffee, label: 'Mini Fridge & Microwave' },
+    { icon: Bathtub, label: 'Private Bathroom' },
+    { icon: Bed, label: 'Daily Housekeeping' },
+  ]
 
   return (
     <section className="py-24 bg-muted">
@@ -17,89 +34,80 @@ export function AguilarLegacy() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
-            The Aguilar Family: Intergenerational Stewardship
+            Accommodations: A Sanctuary of Comfort
           </h2>
           <p className="text-lg text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-            The true defining characteristic of the Hotel O Colonial Inn is the human element, personified by the Aguilar family.
+            18 air-conditioned rooms designed to serve as private sanctuaries for the weary traveler. 
+            Each room emphasizes efficiency, cleanliness, and a home-like atmosphere that encourages relaxation.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Wrench size={32} weight="fill" className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-primary">Gonzalo</h3>
-                  <p className="text-sm text-muted-foreground">The Patriarch of Preservation</p>
-                </div>
-              </div>
-              <div className="space-y-4 text-foreground">
-                <p>
-                  Gonzalo, the patriarch of the establishment, is the embodiment of wisdom and vitality. 
-                  Approaching seventy years of age, he serves as the hotel's "Patriarch of Preservation." 
-                  His role is both administrative and deeply physical; he is known among guests for his 
-                  ability to navigate the hotel's multi-story layouts with a kinetic agility that often 
-                  leaves visitors in awe.
-                </p>
-                <p>
-                  Beyond his role as a host, Gonzalo is a mechanical expert. He possesses an intimate 
-                  understanding of the building's historic plumbing, electrical, and structural systems. 
-                  His hands-on approach ensures that the "heartbeat" of the hotel remains steady. He 
-                  understands that in a century-old building, maintenance is not merely about repair but 
-                  about preservation—ensuring that modern comforts like air conditioning and hot water 
-                  function seamlessly within a vintage aesthetic.
-                </p>
-                <p className="text-sm italic text-muted-foreground">
-                  His presence provides a sense of continuity, reassuring guests that they are in the 
-                  hands of someone who truly knows every floorboard and fixture of the property.
-                </p>
-              </div>
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Lightning size={32} weight="fill" className="text-secondary" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-primary">Senior Aguilar</h3>
-                  <p className="text-sm text-muted-foreground">The Vanguard of Modern Excellence</p>
-                </div>
-              </div>
-              <div className="space-y-4 text-foreground">
-                <p>
-                  Complementing the elder Gonzalo is his eighteen-year-old grandson, affectionately known 
-                  as Senior Aguilar. If Gonzalo represents the hotel's historical continuity, Senior Aguilar 
-                  represents its high-velocity adaptation to the 21st century. Despite his young age, he has 
-                  inherited his grandfather's mechanical genius and applied it to the digital and electronic 
-                  demands of modern hospitality.
-                </p>
-                <p>
-                  Senior Aguilar is a local legend on the property for his rapid-response problem-solving. 
-                  A notable example of his proficiency is his ability to diagnose and repair modern electronic 
-                  key card door mechanisms in under five minutes—a task that typically requires specialized 
-                  technicians from external firms.
-                </p>
-                <p className="text-sm italic text-muted-foreground">
-                  His technical skill ensures that the "hidden pocket of Mexico" vibe is never interrupted 
-                  by the frustrations of modern technology. Together, the grandfather and grandson provide 
-                  a flawless blend of historic care and modern convenience.
-                </p>
-              </div>
-            </Card>
+          <div className="prose-luxury max-w-4xl mx-auto space-y-6 mb-16">
+            <p>
+              The Hotel O Colonial Inn offers 18 air-conditioned rooms, each designed with comfort and 
+              character in mind. The rooms are approximately 150 square feet, a size that creates a cozy, 
+              intimate environment optimized to include all necessary modern amenities while maintaining 
+              the historic feel of the building. Guests can choose from several configurations, including 
+              King, Queen, and Full beds, ensuring that individuals, couples, and families can all find 
+              appropriate lodging.
+            </p>
           </div>
 
-          <div className="mt-12 text-center">
-            <Card className="p-8 bg-accent/10 border-accent inline-block">
-              <Users size={48} weight="fill" className="text-accent mx-auto mb-4" />
-              <p className="text-lg italic max-w-2xl">
-                "The operational philosophy is driven by a commitment to ensuring that every guest is treated 
-                as a guest in a private home rather than a customer in a commercial space. This commitment to 
-                care transforms the guest experience from a simple transaction into an entry into an extended 
-                family network."
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {roomTypes.map((room, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                <Bed size={40} weight="fill" className="text-primary mb-4" />
+                <h3 className="text-xl font-bold text-primary mb-3">{room.name}</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p><strong>Beds:</strong> {room.beds}</p>
+                  <p><strong>Capacity:</strong> {room.capacity}</p>
+                  <p><strong>Size:</strong> {room.sqft}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <Separator className="my-12" />
+
+          <h3 className="text-3xl font-bold text-primary mb-8 text-center">Modern Amenities in Every Room</h3>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {amenities.map((amenity, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <amenity.icon size={32} weight="fill" className="text-secondary flex-shrink-0" />
+                <span className="text-foreground font-medium">{amenity.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="prose-luxury max-w-4xl mx-auto space-y-6">
+            <p>
+              Every room is equipped with high-speed WiFi (50+ Mbps), ensuring that guests remain connected 
+              to the digital world while enjoying their historic surroundings. The inclusion of a 32-inch TV 
+              with digital channels, a refrigerator, and a microwave in each room allows for a level of 
+              self-sufficiency that is highly valued by long-term travelers and families. Furthermore, the 
+              rooms feature private bathrooms with bathtubs or showers and complimentary toiletries, providing 
+              a complete suite of comforts for the modern guest.
+            </p>
+            
+            <Separator className="my-8" />
+            
+            <h4 className="text-2xl font-bold text-primary">The Communal Experience: The Lobby Fireplace</h4>
+            <p>
+              A central feature of the hotel's communal life is the fireplace in the lobby. This hearth serves 
+              as a physical manifestation of the inn's warm hospitality. Especially in the cooler months of the 
+              Rio Grande Valley, the fireplace creates a gathering point where guests can interact with fellow 
+              travelers. This emphasis on communal space is a deliberate design choice that reinforces the "home" 
+              philosophy of the inn, moving away from the isolated, corridor-centric design of modern corporate hotels.
+            </p>
+
+            <div className="bg-accent/10 border-l-4 border-accent p-6 my-8">
+              <p className="text-lg font-medium text-foreground mb-4">Professional Management & Service</p>
+              <p className="text-muted-foreground">
+                The hotel is managed by the dedicated Aguilar family, with patriarch Gonzalo and his grandson 
+                Señor Aguilar ensuring that every guest receives personalized attention and that the historic 
+                property's systems function seamlessly. The 24-hour front desk ensures assistance is always available.
               </p>
-            </Card>
+            </div>
           </div>
         </motion.div>
       </div>
