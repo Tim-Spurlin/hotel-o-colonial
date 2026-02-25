@@ -20,7 +20,7 @@ const attractions: Attraction[] = [
     name: 'Market Square Research Center',
     distance: '0.1 miles',
     walk: '2 minutes',
-    description: 'Historic marketplace and community gathering space, heart of downtown Brownsville.',
+    description: 'Historic marketplace and community gathering space, heart of downtown Brownsville. Hub for artisanal products, farm-fresh eggs, and the Farmers\' Market.',
     coordinates: { x: 52, y: 45 },
     category: 'museum'
   },
@@ -29,8 +29,17 @@ const attractions: Attraction[] = [
     name: 'Stillman House Museum',
     distance: '0.2 miles',
     walk: '3 minutes',
-    description: 'Home of Charles Stillman, founder of Brownsville. A window into 19th-century merchant class life.',
+    description: 'Home of Charles Stillman, founder of Brownsville. A direct window into the 19th-century origins of the city and its early merchant class.',
     coordinates: { x: 45, y: 38 },
+    category: 'museum'
+  },
+  {
+    id: 'ut-brownsville',
+    name: 'University of Texas at Brownsville',
+    distance: '0.3 miles',
+    walk: '5 minutes',
+    description: 'Major educational institution and cultural hub in the heart of downtown Brownsville.',
+    coordinates: { x: 38, y: 48 },
     category: 'museum'
   },
   {
@@ -38,7 +47,7 @@ const attractions: Attraction[] = [
     name: 'Immaculate Conception Cathedral',
     distance: '0.3 miles',
     walk: '5 minutes',
-    description: 'Architectural landmark and cornerstone of the community\'s spiritual and social life.',
+    description: 'Architectural landmark and cornerstone of the community\'s spiritual and social life. A stunning example of religious architecture.',
     coordinates: { x: 58, y: 52 },
     category: 'cathedral'
   },
@@ -47,8 +56,17 @@ const attractions: Attraction[] = [
     name: 'Historic Brownsville Museum',
     distance: '0.6 miles',
     walk: '10 minutes',
-    description: 'Permanent and temporary exhibits detailing the city\'s evolution from discovery through the 20th century.',
+    description: 'Housed in a historic building with temporary and permanent exhibits detailing the city\'s evolution from discovery through the 20th century.',
     coordinates: { x: 35, y: 42 },
+    category: 'museum'
+  },
+  {
+    id: 'fine-art-museum',
+    name: 'Brownsville Museum of Fine Art',
+    distance: '0.7 miles',
+    walk: '12 minutes',
+    description: 'Rotating array of international and local art exhibits, providing cultural enrichment through art education and community programs.',
+    coordinates: { x: 42, y: 60 },
     category: 'museum'
   },
   {
@@ -56,16 +74,16 @@ const attractions: Attraction[] = [
     name: 'Gladys Porter Zoo',
     distance: '1.0 miles',
     walk: '19 minutes',
-    description: '30-acre tropical botanical garden and internationally celebrated center for wildlife conservation.',
+    description: '30-acre tropical botanical oasis and internationally celebrated center for wildlife conservation. Known for breeding endangered species.',
     coordinates: { x: 70, y: 65 },
     category: 'zoo'
   },
   {
     id: 'rutledge',
-    name: 'Rutledge Hamburgers',
+    name: 'Rutledge Hamburgers (est. 1924)',
     distance: '0.3 miles',
     walk: '5 minutes',
-    description: '100-year-old Texas burger joint (since 1924) serving classic hamburgers and Mexican Coke.',
+    description: '100-year-old Texas burger joint at 1126 E. Washington St. A slice of Brownsville\'s culinary history with classic hamburgers and Mexican Coke.',
     coordinates: { x: 48, y: 35 },
     category: 'dining'
   },
@@ -74,8 +92,17 @@ const attractions: Attraction[] = [
     name: 'Dean Porter Park',
     distance: '0.4 miles',
     walk: '7 minutes',
-    description: 'Scenic urban park perfect for morning walks and evening strolls.',
+    description: 'Scenic urban park perfect for morning walks and evening strolls. Green space in the heart of downtown.',
     coordinates: { x: 40, y: 55 },
+    category: 'park'
+  },
+  {
+    id: 'international-bridge',
+    name: 'International Bridge to Matamoros',
+    distance: '0.5 miles',
+    walk: '8 minutes',
+    description: 'Gateway to Mexico, just steps from the hotel. Explore the unique cultural and economic interplay of the border region.',
+    coordinates: { x: 62, y: 40 },
     category: 'park'
   }
 ]

@@ -7,8 +7,13 @@ import { InteractiveMap } from '@/components/InteractiveMap'
 const attractions = [
   { name: 'Market Square Research Center', distance: '0.1 miles', walk: '2 minutes', icon: MapPin },
   { name: 'Stillman House Museum', distance: '0.2 miles', walk: '3 minutes', icon: MapPin },
+  { name: 'University of Texas at Brownsville', distance: '0.3 miles', walk: '5 minutes', icon: MapPin },
   { name: 'Immaculate Conception Cathedral', distance: '0.3 miles', walk: '5 minutes', icon: MapPin },
+  { name: 'Rutledge Hamburgers (est. 1924)', distance: '0.3 miles', walk: '5 minutes', icon: MapPin },
+  { name: 'Dean Porter Park', distance: '0.4 miles', walk: '7 minutes', icon: MapPin },
+  { name: 'International Bridge to Matamoros', distance: '0.5 miles', walk: '8 minutes', icon: MapPin },
   { name: 'Historic Brownsville Museum', distance: '0.6 miles', walk: '10 minutes', icon: MapPin },
+  { name: 'Brownsville Museum of Fine Art', distance: '0.7 miles', walk: '12 minutes', icon: MapPin },
   { name: 'Gladys Porter Zoo', distance: '1.0 miles', walk: '19 minutes', icon: MapPin },
 ]
 
@@ -105,6 +110,44 @@ export function StrategicGeography() {
                 species, the zoo offers an immersive experience where guests can spend an entire day exploring 
                 global wildlife habitats without the need for vehicular transportation.
               </p>
+            </div>
+
+            <div className="bg-secondary/10 p-8 rounded-lg border border-secondary/20 mt-8">
+              <h3 className="text-2xl font-bold text-primary mb-4">Connectivity: The International and Global Gateway</h3>
+              <p className="mb-4">
+                The Hotel O Colonial Inn is not only a historical sanctuary but also a strategically located 
+                gateway for global and international travelers. Its proximity to the U.S.-Mexico border makes 
+                it an ideal choice for those engaged in binational business or tourism.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <h4 className="font-semibold text-foreground mb-2">International Bridge to Matamoros</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Just steps from the hotel, explore the unique cultural and economic interplay of the border region. 
+                    Walking distance to Mexico.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <h4 className="font-semibold text-foreground mb-2">SpaceX Starbase</h4>
+                  <p className="text-sm text-muted-foreground">
+                    ~40-minute drive to Boca Chica Beach. Convenient base for visiting the SpaceX facility 
+                    and witnessing the future of space exploration.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <h4 className="font-semibold text-foreground mb-2">Brownsville Airport (BRO)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    5.7 miles / ~12 minutes from the hotel. Easy access to regional and international flights.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border border-border">
+                  <h4 className="font-semibold text-foreground mb-2">South Padre Island</h4>
+                  <p className="text-sm text-muted-foreground">
+                    ~45-minute drive to Beach Park at Isla Blanca and coastal leisure. Perfect for day trips 
+                    to the Gulf Coast.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="text-center mt-12">
