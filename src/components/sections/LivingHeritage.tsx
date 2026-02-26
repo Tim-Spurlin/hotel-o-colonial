@@ -19,7 +19,7 @@ export function LivingHeritage() {
 
   return (
     <section className="py-24 bg-background relative overflow-hidden talavera-pattern-3">
-      <div className="absolute inset-0 opacity-30" />
+      <div className="absolute inset-0 opacity-20" />
       
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div

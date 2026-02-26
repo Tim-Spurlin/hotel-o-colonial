@@ -15,7 +15,7 @@ export function BookingPartnersSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="book" className="py-24 bg-background talavera-pattern-1 talavera-border-bottom">
+    <section id="book" className="py-24 bg-secondary/25 talavera-pattern-1 talavera-border-bottom">
       <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

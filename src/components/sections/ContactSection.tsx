@@ -29,7 +29,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-24 bg-background talavera-pattern-5">
       <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

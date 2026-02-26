@@ -7,7 +7,7 @@ export function RoomsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="rooms" className="py-24 bg-muted talavera-pattern-6">
+    <section id="rooms" className="py-24 bg-secondary/20 talavera-pattern-6">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

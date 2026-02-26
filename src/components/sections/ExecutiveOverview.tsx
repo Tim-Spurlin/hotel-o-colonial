@@ -6,7 +6,7 @@ export function ExecutiveOverview() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="story" className="py-24 bg-background talavera-pattern-1">
+    <section id="story" className="py-24 bg-card talavera-pattern-1">
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

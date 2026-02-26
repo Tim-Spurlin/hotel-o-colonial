@@ -7,7 +7,7 @@ export function ExperiencesSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="experiences" className="py-24 bg-background">
+    <section id="experiences" className="py-24 bg-background talavera-pattern-3">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

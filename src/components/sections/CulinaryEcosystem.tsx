@@ -7,7 +7,7 @@ export function CulinaryEcosystem() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="dining" className="py-24 bg-background talavera-pattern-5 talavera-border-top">
+    <section id="dining" className="py-24 bg-card talavera-pattern-5 talavera-border-top">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
