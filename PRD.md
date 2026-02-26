@@ -95,19 +95,19 @@ The design must balance:
 
 ## Color Selection
 
-The palette draws directly from the Mexican colonial hacienda tradition and the building's historic materials:
+The palette embraces vibrant Mexican tradition with warm, earthy tones inspired by colonial haciendas, Talavera pottery, and Southwestern landscapes:
 
-- **Primary Color (Deep Terracotta)**: `oklch(0.45 0.12 35)` — The warm, earthy red-brown of the historic brick facade. This color grounds the design in the building's physical presence and evokes the warmth of Southwestern sunsets. Used for primary CTAs, accent borders, and key interactive elements.
+- **Primary Color (Deep Terracotta)**: `oklch(0.45 0.12 35)` — The warm, earthy red-brown of traditional Mexican pottery and historic brick facades. This rich color evokes Southwestern sunsets, clay tiles, and the warmth of Mexican hospitality. Used for primary CTAs, accent borders, and key interactive elements.
   
-- **Secondary Color (Warm Ochre Gold)**: `oklch(0.72 0.15 75)` — The golden hour light that bathes the building at dusk, reminiscent of Talavera tile accents. Used for hover states, highlights, and to draw attention to important navigation elements.
+- **Secondary Color (Warm Ochre Gold)**: `oklch(0.72 0.15 75)` — Golden hour light reminiscent of Talavera tile accents and sunbaked adobe walls. This luminous color brings energy and warmth, used for hover states, highlights, and to draw attention to important navigation elements.
 
-- **Accent Color (Sage Green)**: `oklch(0.55 0.05 145)` — Muted botanical green inspired by courtyard gardens and the Rio Grande Valley landscape. Used sparingly for success states, environmental references, and to provide visual breathing room from the warm tones.
+- **Accent Color (Sage Green)**: `oklch(0.55 0.05 145)` — Muted botanical green inspired by agave plants, courtyard gardens, and the Rio Grande Valley landscape. Used for success states, environmental references, and to provide visual breathing room from the warm tones.
 
-- **Background (Soft Cream)**: `oklch(0.96 0.01 75)` — Parchment-like warmth that suggests aged paper and stucco walls. This prevents the harsh white of modern websites while maintaining readability.
+- **Background (Warm Cream)**: `oklch(0.96 0.01 75)` — Soft parchment warmth suggesting aged stucco walls and traditional Mexican textiles. This warm neutral maintains readability while preventing the starkness of pure white.
 
-- **Foreground (Dark Charcoal)**: `oklch(0.25 0.01 145)` — Deep, elegant text color with slight green undertone for warmth. Never pure black, always with character.
+- **Foreground (Rich Charcoal)**: `oklch(0.25 0.01 145)` — Deep, sophisticated text color with subtle warmth. Never harsh black, always inviting.
 
-- **Muted Tones**: Lighter tints of terracotta and cream for cards, sections, and subtle backgrounds.
+- **Muted & Border Tones**: Warm sandy tints at `oklch(0.85 0.03 65)` and `oklch(0.92 0.02 75)` for cards, sections, and subtle backgrounds—echoing desert landscapes and weathered plaster.
 
 **Foreground/Background Pairings**:
 - Primary Text on Cream Background: `oklch(0.25 0.01 145)` on `oklch(0.96 0.01 75)` — Ratio 11.2:1 ✓
