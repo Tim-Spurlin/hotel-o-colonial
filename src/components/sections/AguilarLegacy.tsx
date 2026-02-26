@@ -25,7 +25,7 @@ export function AguilarLegacy() {
   ]
 
   return (
-    <section className="py-24 bg-muted">
+    <section className="py-24 bg-muted talavera-pattern-2 talavera-border-top talavera-border-bottom">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

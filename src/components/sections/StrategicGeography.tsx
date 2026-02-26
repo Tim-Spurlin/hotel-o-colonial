@@ -21,7 +21,7 @@ export function StrategicGeography() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section className="py-24 bg-muted">
+    <section className="py-24 bg-muted talavera-pattern-4">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
