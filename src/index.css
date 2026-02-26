@@ -149,62 +149,46 @@
 }
 
 .talavera-pattern-1 {
-  background-color: oklch(0.96 0.01 75);
-  background-image: 
-    radial-gradient(circle at 25px 25px, oklch(0.45 0.12 35) 2%, transparent 0%),
-    radial-gradient(circle at 75px 75px, oklch(0.72 0.15 75) 2%, transparent 0%),
-    radial-gradient(circle at 25px 75px, oklch(0.55 0.05 145) 1.5%, transparent 0%),
-    radial-gradient(circle at 75px 25px, oklch(0.62 0.18 15) 1.5%, transparent 0%);
-  background-size: 100px 100px;
-  background-position: 0 0, 0 0, 0 0, 0 0;
-}
-
-.talavera-pattern-2 {
   background-color: oklch(0.99 0.005 75);
   background-image: 
     repeating-linear-gradient(45deg, transparent, transparent 35px, oklch(0.72 0.15 75 / 0.15) 35px, oklch(0.72 0.15 75 / 0.15) 70px),
     repeating-linear-gradient(-45deg, transparent, transparent 35px, oklch(0.45 0.12 35 / 0.1) 35px, oklch(0.45 0.12 35 / 0.1) 70px);
 }
 
-.talavera-pattern-3 {
+.talavera-pattern-2 {
   background-color: oklch(0.96 0.01 75);
   background-image: 
-    repeating-conic-gradient(from 45deg at 50% 50%, 
-      oklch(0.96 0.01 75) 0deg, 
-      oklch(0.72 0.15 75 / 0.2) 90deg, 
-      oklch(0.96 0.01 75) 180deg,
-      oklch(0.45 0.12 35 / 0.15) 270deg,
-      oklch(0.96 0.01 75) 360deg);
-  background-size: 80px 80px;
+    repeating-linear-gradient(0deg, transparent, transparent 50px, oklch(0.45 0.12 35 / 0.08) 50px, oklch(0.45 0.12 35 / 0.08) 52px),
+    repeating-linear-gradient(90deg, transparent, transparent 50px, oklch(0.72 0.15 75 / 0.12) 50px, oklch(0.72 0.15 75 / 0.12) 52px);
+}
+
+.talavera-pattern-3 {
+  background-color: oklch(0.99 0.005 75);
+  background-image: 
+    repeating-linear-gradient(0deg, oklch(0.72 0.15 75 / 0.06), oklch(0.72 0.15 75 / 0.06) 2px, transparent 2px, transparent 20px),
+    repeating-linear-gradient(90deg, oklch(0.45 0.12 35 / 0.06), oklch(0.45 0.12 35 / 0.06) 2px, transparent 2px, transparent 20px);
 }
 
 .talavera-pattern-4 {
-  background-color: oklch(0.99 0.005 75);
+  background-color: oklch(0.96 0.01 75);
   background-image: 
-    radial-gradient(circle at 0% 50%, oklch(0.72 0.15 75 / 0.15) 10px, transparent 10px),
-    radial-gradient(circle at 100% 50%, oklch(0.45 0.12 35 / 0.1) 10px, transparent 10px),
-    repeating-linear-gradient(90deg, transparent, transparent 48px, oklch(0.62 0.18 15 / 0.08) 48px, oklch(0.62 0.18 15 / 0.08) 52px, transparent 52px, transparent 100px);
-  background-size: 100px 50px, 100px 50px, 100px 50px;
+    repeating-linear-gradient(45deg, transparent, transparent 25px, oklch(0.62 0.18 15 / 0.08) 25px, oklch(0.62 0.18 15 / 0.08) 50px),
+    repeating-linear-gradient(-45deg, transparent, transparent 25px, oklch(0.55 0.05 145 / 0.08) 25px, oklch(0.55 0.05 145 / 0.08) 50px);
 }
 
 .talavera-pattern-5 {
-  background-color: oklch(0.96 0.01 75);
+  background-color: oklch(0.99 0.005 75);
   background-image: 
-    radial-gradient(circle at 50px 50px, oklch(0.55 0.05 145 / 0.2) 20px, transparent 20px),
-    radial-gradient(circle at 50px 50px, oklch(0.72 0.15 75 / 0.15) 35px, transparent 35px),
-    repeating-linear-gradient(0deg, transparent, transparent 48px, oklch(0.45 0.12 35 / 0.08) 48px, oklch(0.45 0.12 35 / 0.08) 52px);
-  background-size: 100px 100px;
+    linear-gradient(90deg, oklch(0.72 0.15 75 / 0.12) 1px, transparent 1px),
+    linear-gradient(0deg, oklch(0.45 0.12 35 / 0.12) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
 .talavera-pattern-6 {
-  background-color: oklch(0.99 0.005 75);
+  background-color: oklch(0.96 0.01 75);
   background-image: 
-    radial-gradient(circle at 25% 25%, oklch(0.62 0.18 15 / 0.12) 15px, transparent 15px),
-    radial-gradient(circle at 75% 75%, oklch(0.62 0.18 15 / 0.12) 15px, transparent 15px),
-    radial-gradient(circle at 25% 75%, oklch(0.72 0.15 75 / 0.15) 12px, transparent 12px),
-    radial-gradient(circle at 75% 25%, oklch(0.72 0.15 75 / 0.15) 12px, transparent 12px),
-    linear-gradient(45deg, transparent 48%, oklch(0.45 0.12 35 / 0.05) 48%, oklch(0.45 0.12 35 / 0.05) 52%, transparent 52%);
-  background-size: 100px 100px;
+    repeating-linear-gradient(90deg, transparent, transparent 30px, oklch(0.72 0.15 75 / 0.1) 30px, oklch(0.72 0.15 75 / 0.1) 60px),
+    repeating-linear-gradient(0deg, transparent, transparent 30px, oklch(0.45 0.12 35 / 0.08) 30px, oklch(0.45 0.12 35 / 0.08) 60px);
 }
 
 .talavera-border-top {
