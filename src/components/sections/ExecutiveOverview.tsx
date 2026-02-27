@@ -30,7 +30,7 @@ export function ExecutiveOverview() {
             </video>
           </div>
 
-          <div className="prose-luxury space-y-6">
+          <div className="prose-luxury space-y-6 text-center">
             <p>
               The contemporary travel landscape is frequently defined by a movement toward the generic, 
               where standardized lodging options offer predictability at the expense of character. In this 

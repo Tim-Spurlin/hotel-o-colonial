@@ -71,7 +71,7 @@ export function StrategicGeography() {
             ))}
           </div>
 
-          <div className="prose-luxury max-w-4xl mx-auto space-y-6">
+          <div className="prose-luxury max-w-4xl mx-auto space-y-6 text-center">
             <h3 className="text-2xl font-bold text-primary text-center">The Mitte Cultural District</h3>
             <p>
               The hotel is located within steps of the <strong>Mitte Cultural District</strong>, an area of 

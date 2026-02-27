@@ -41,7 +41,7 @@ export function AguilarLegacy() {
             Each room emphasizes efficiency, cleanliness, and a home-like atmosphere that encourages relaxation.
           </p>
 
-          <div className="prose-luxury max-w-4xl mx-auto space-y-6 mb-16">
+          <div className="prose-luxury max-w-4xl mx-auto space-y-6 mb-16 text-center">
             <p>
               The Hotel O Colonial Inn offers 18 air-conditioned rooms, each designed with comfort and 
               character in mind. The rooms are approximately 150 square feet, a size that creates a cozy, 
@@ -79,7 +79,7 @@ export function AguilarLegacy() {
             ))}
           </div>
 
-          <div className="prose-luxury max-w-4xl mx-auto space-y-6">
+          <div className="prose-luxury max-w-4xl mx-auto space-y-6 text-center">
             <p>
               Every room is equipped with high-speed WiFi (50+ Mbps), ensuring that guests remain connected 
               to the digital world while enjoying their historic surroundings. The inclusion of a 32-inch TV 

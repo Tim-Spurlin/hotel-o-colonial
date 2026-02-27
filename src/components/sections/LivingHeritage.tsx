@@ -55,7 +55,7 @@ export function LivingHeritage() {
             </Card>
           </div>
 
-          <div className="prose-luxury max-w-4xl mx-auto space-y-6 mb-16">
+          <div className="prose-luxury max-w-4xl mx-auto space-y-6 mb-16 text-center">
             <h3 className="text-2xl font-bold text-primary">The San Roman Legacy and Civil War History</h3>
             <p>
               The architectural lineage of 1147 E. Levee Street can be traced back to the San Roman Building, 
