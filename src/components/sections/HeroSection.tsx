@@ -31,7 +31,7 @@ export function HeroSection() {
         ref={parallaxRef}
         className="absolute inset-0 parallax-bg"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80)',
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dw3lf8roj/image/upload/v1772177059/Screenshot_20260226_073936_meilbo.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '120%'
