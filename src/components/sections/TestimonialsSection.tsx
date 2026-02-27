@@ -24,7 +24,7 @@ export function TestimonialsSection() {
             "This hotel goes above and beyond any holiday inn or Hilton I have ever visited. 
             The Aguilar family makes you feel right at home."
           </p>
-          <p className="text-sm text-muted-foreground mt-4">— Sketch Argraves, Guest</p>
+          <p className="text-sm text-muted-foreground mt-4">— Trish Garcia, Guest</p>
         </motion.div>
       </div>
     </section>
