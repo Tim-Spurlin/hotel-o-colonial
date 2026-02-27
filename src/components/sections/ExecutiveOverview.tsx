@@ -18,6 +18,18 @@ export function ExecutiveOverview() {
             The Philosophy of Soul in Modern Hospitality
           </h2>
 
+          <div className="mb-12 rounded-lg overflow-hidden shadow-2xl">
+            <video
+              loop
+              muted
+              playsInline
+              autoPlay
+              className="w-full h-auto"
+            >
+              <source src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772181014/grok-video-8ddea788-d616-4a62-a0c6-e0209b6485d5_txpil6.mp4" type="video/mp4" />
+            </video>
+          </div>
+
           <div className="prose-luxury space-y-6">
             <p>
               The contemporary travel landscape is frequently defined by a movement toward the generic, 
