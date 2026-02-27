@@ -63,7 +63,6 @@ quadrantChart
   title Mix of Value vs. Premium Appeal
   x-axis Value Friendly --> Premium Upsell
   y-axis Essential Comfort --> Immersive Character
-  Legend: true
   "Full Bed" : [0.25, 0.3]
   "King Bed" : [0.45, 0.55]
   "2 Full Beds" : [0.55, 0.5]
