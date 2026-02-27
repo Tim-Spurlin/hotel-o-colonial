@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { House, List, X } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -58,12 +59,15 @@ export function Navigation() {
             ))}
           </div>
 
-          <Button 
-            onClick={() => handleNavClick('#book')}
-            className="hidden lg:flex bg-primary hover:bg-secondary hover:text-foreground transition-colors"
-          >
-            Book Your Stay
-          </Button>
+          <div className="hidden lg:flex items-center gap-3">
+            <ThemeToggle />
+            <Button 
+              onClick={() => handleNavClick('#book')}
+              className="bg-primary hover:bg-secondary hover:text-foreground transition-colors"
+            >
+              Book Your Stay
+            </Button>
+          </div>
 
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger asChild className="lg:hidden">
@@ -73,6 +77,10 @@ export function Navigation() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col gap-6 mt-8">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-sm font-medium text-muted-foreground">Theme</span>
+                  <ThemeToggle />
+                </div>
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
