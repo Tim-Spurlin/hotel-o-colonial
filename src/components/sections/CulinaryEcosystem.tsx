@@ -20,10 +20,32 @@ export function CulinaryEcosystem() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             A Culinary Ecosystem at Your Doorstep
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
             The Hotel O Colonial Inn is positioned in an area that is currently experiencing a massive downtown renaissance. 
             This revitalization is perhaps most visible in the culinary scene, where historic establishments and modern fusions coexist.
           </p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-2xl"
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+              poster="https://res.cloudinary.com/dw3lf8roj/image/upload/v1772182120/grok-video-6e8578cd-6392-41c0-b326-0e985fbe93b9_az65lr.jpg"
+            >
+              <source 
+                src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772182120/grok-video-6e8578cd-6392-41c0-b326-0e985fbe93b9_az65lr.mp4" 
+                type="video/mp4" 
+              />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
         </motion.div>
       </div>
     </section>
