@@ -27,7 +27,7 @@ export function GallerySection() {
         >
           <Camera size={64} weight="fill" className="text-primary mx-auto mb-6" />
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Gallery
+            Premier
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Experience the beauty of our historic property and the vibrant culture of downtown Brownsville.
