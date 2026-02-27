@@ -1,4 +1,4 @@
-import { House, Phone, Envelope, MapPin } from '@phosphor-icons/react'
+import { House, MapPin } from '@phosphor-icons/react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <House size={32} weight="fill" className="text-secondary" />
@@ -19,7 +19,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-serif font-semibold text-lg mb-4">Visit Us</h3>
+            <h3 className="font-serif font-semibold text-lg mb-4">Location</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2">
                 <MapPin size={20} weight="fill" className="text-secondary mt-0.5 flex-shrink-0" />
@@ -27,18 +27,6 @@ export function Footer() {
                   1147 E. Levee Street<br />
                   Brownsville, Texas 78520
                 </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone size={20} weight="fill" className="text-secondary flex-shrink-0" />
-                <a href="tel:+19565461212" className="opacity-90 hover:opacity-100 transition-opacity">
-                  (956) 546-1212
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Envelope size={20} weight="fill" className="text-secondary flex-shrink-0" />
-                <a href="mailto:info@hotelocolonialinn.com" className="opacity-90 hover:opacity-100 transition-opacity">
-                  info@hotelocolonialinn.com
-                </a>
               </div>
             </div>
           </div>

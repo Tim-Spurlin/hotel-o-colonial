@@ -10,7 +10,6 @@ const navLinks = [
   { href: '#experiences', label: 'Experiences' },
   { href: '#dining', label: 'Dining & Attractions' },
   { href: '#gallery', label: 'Gallery' },
-  { href: '#contact', label: 'Contact' },
 ]
 
 export function Navigation() {

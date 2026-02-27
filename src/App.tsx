@@ -14,7 +14,6 @@ import { ExperiencesSection } from '@/components/sections/ExperiencesSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { BookingPartnersSection } from '@/components/sections/BookingPartnersSection'
 import { GallerySection } from '@/components/sections/GallerySection'
-import { ContactSection } from '@/components/sections/ContactSection'
 import { Toaster } from '@/components/ui/sonner'
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
         <TestimonialsSection />
         <GallerySection />
         <BookingPartnersSection />
-        <ContactSection />
       </main>
 
       <Footer />
