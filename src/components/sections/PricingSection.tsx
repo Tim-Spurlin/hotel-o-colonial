@@ -320,87 +320,151 @@ export function PricingSection() {
                     </p>
                   </div>
                 ) : (
-                  <div className="overflow-x-auto">
-                    <table className="w-full min-w-[640px]">
-                      <thead className="bg-muted/50 border-b">
-                        <tr>
-                          <th className="px-3 md:px-6 py-2 md:py-3 text-left text-[10px] md:text-xs font-semibold text-muted-foreground uppercase">
-                            Platform Data
-                          </th>
-                          <th className="px-3 md:px-6 py-2 md:py-3 text-left text-[10px] md:text-xs font-semibold text-muted-foreground uppercase">
-                            Room Type
-                          </th>
-                          <th className="px-3 md:px-6 py-2 md:py-3 text-left text-[10px] md:text-xs font-semibold text-muted-foreground uppercase">
-                            Rate
-                          </th>
-                          <th className="px-3 md:px-6 py-2 md:py-3 text-left text-[10px] md:text-xs font-semibold text-muted-foreground uppercase hidden xl:table-cell">
-                            Context
-                          </th>
-                          <th className="px-3 md:px-6 py-2 md:py-3 text-right text-[10px] md:text-xs font-semibold text-muted-foreground uppercase">
-                            Action
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y">
-                        {filteredData.map((item, index) => {
-                          const isLowest = item.totalPrice === lowestPrice
-                          return (
-                            <motion.tr
-                              key={`${item.platform}-${item.room}-${index}`}
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.3, delay: index * 0.05 }}
-                              className={`hover:bg-muted/30 transition-colors ${
-                                isLowest ? 'bg-amber-50 dark:bg-amber-950/20 border-l-4 border-l-amber-500' : ''
-                              }`}
-                            >
-                              <td className="px-3 md:px-6 py-3 md:py-4">
-                                <div className="text-sm md:text-base font-bold text-foreground">{item.platform}</div>
-                                <div className={`text-[10px] md:text-xs font-medium ${getNetworkColor(item.network)}`}>
+                  <>
+                    {/* MOBILE CARD VIEW */}
+                    <div className="md:hidden divide-y">
+                      {filteredData.map((item, index) => {
+                        const isLowest = item.totalPrice === lowestPrice
+                        return (
+                          <motion.div
+                            key={`mobile-${item.platform}-${item.room}-${index}`}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3, delay: index * 0.05 }}
+                            className={`p-4 space-y-3 ${
+                              isLowest ? 'bg-amber-50 dark:bg-amber-950/20 border-l-4 border-l-amber-500' : 'hover:bg-muted/30'
+                            }`}
+                          >
+                            {/* Platform & Network */}
+                            <div className="flex items-start justify-between gap-2">
+                              <div>
+                                <div className="text-sm font-bold text-foreground">{item.platform}</div>
+                                <div className={`text-xs font-medium ${getNetworkColor(item.network)}`}>
                                   {item.network}
                                 </div>
-                              </td>
-                              <td className="px-3 md:px-6 py-3 md:py-4 whitespace-nowrap">
-                                <Badge variant="secondary" className="font-semibold text-[10px] md:text-xs">
-                                  {item.room}
-                                </Badge>
-                              </td>
-                              <td className="px-3 md:px-6 py-3 md:py-4">
-                                <div className={`text-xl md:text-2xl font-bold ${isLowest ? 'text-amber-600' : 'text-foreground'}`}>
+                              </div>
+                              <Badge variant="secondary" className="font-semibold text-xs">
+                                {item.room}
+                              </Badge>
+                            </div>
+
+                            {/* Price Display */}
+                            <div className="flex items-end justify-between gap-4">
+                              <div className="flex-1">
+                                <div className={`text-2xl font-bold ${isLowest ? 'text-amber-600' : 'text-foreground'}`}>
                                   ${item.totalPrice}
                                 </div>
-                                <div className="text-[10px] md:text-xs text-muted-foreground">
+                                <div className="text-xs text-muted-foreground mt-0.5">
                                   Base: ${item.baseRate} + Tax: ${item.taxesFees}
                                 </div>
                                 {item.discount && (
-                                  <div className="text-[10px] md:text-xs text-green-600 font-medium mt-0.5">
+                                  <div className="text-xs text-green-600 font-medium mt-1">
                                     Save ${item.discount.from - item.discount.to}
                                   </div>
                                 )}
-                              </td>
-                              <td className="px-3 md:px-6 py-3 md:py-4 hidden xl:table-cell">
-                                <div className="text-xs text-muted-foreground max-w-xs">
-                                  {item.context}
-                                </div>
-                              </td>
-                              <td className="px-3 md:px-6 py-3 md:py-4 text-right">
-                                <Button
-                                  size="sm"
-                                  variant={isLowest ? "default" : "outline"}
-                                  className={`text-xs md:text-sm whitespace-nowrap ${isLowest ? 'bg-amber-600 hover:bg-amber-500' : ''}`}
-                                  onClick={() => window.open(item.url, '_blank')}
-                                >
-                                  <span className="hidden sm:inline">Select Room</span>
-                                  <span className="sm:hidden">Select</span>
-                                  <span className="ml-1">→</span>
-                                </Button>
-                              </td>
-                            </motion.tr>
-                          )
-                        })}
-                      </tbody>
-                    </table>
-                  </div>
+                              </div>
+
+                              {/* Select Button - Always Visible */}
+                              <Button
+                                size="default"
+                                variant={isLowest ? "default" : "outline"}
+                                className={`shrink-0 ${isLowest ? 'bg-amber-600 hover:bg-amber-500' : ''}`}
+                                onClick={() => window.open(item.url, '_blank')}
+                              >
+                                Select →
+                              </Button>
+                            </div>
+
+                            {/* Context */}
+                            <div className="text-xs text-muted-foreground pt-2 border-t">
+                              {item.context}
+                            </div>
+                          </motion.div>
+                        )
+                      })}
+                    </div>
+
+                    {/* DESKTOP TABLE VIEW */}
+                    <div className="hidden md:block overflow-x-auto">
+                      <table className="w-full">
+                        <thead className="bg-muted/50 border-b">
+                          <tr>
+                            <th className="px-6 py-3 text-left text-xs font-semibold text-muted-foreground uppercase">
+                              Platform Data
+                            </th>
+                            <th className="px-6 py-3 text-left text-xs font-semibold text-muted-foreground uppercase">
+                              Room Type
+                            </th>
+                            <th className="px-6 py-3 text-left text-xs font-semibold text-muted-foreground uppercase">
+                              Rate
+                            </th>
+                            <th className="px-6 py-3 text-left text-xs font-semibold text-muted-foreground uppercase hidden xl:table-cell">
+                              Context
+                            </th>
+                            <th className="px-6 py-3 text-right text-xs font-semibold text-muted-foreground uppercase">
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y">
+                          {filteredData.map((item, index) => {
+                            const isLowest = item.totalPrice === lowestPrice
+                            return (
+                              <motion.tr
+                                key={`desktop-${item.platform}-${item.room}-${index}`}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3, delay: index * 0.05 }}
+                                className={`hover:bg-muted/30 transition-colors ${
+                                  isLowest ? 'bg-amber-50 dark:bg-amber-950/20 border-l-4 border-l-amber-500' : ''
+                                }`}
+                              >
+                                <td className="px-6 py-4">
+                                  <div className="text-base font-bold text-foreground">{item.platform}</div>
+                                  <div className={`text-xs font-medium ${getNetworkColor(item.network)}`}>
+                                    {item.network}
+                                  </div>
+                                </td>
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                  <Badge variant="secondary" className="font-semibold text-xs">
+                                    {item.room}
+                                  </Badge>
+                                </td>
+                                <td className="px-6 py-4">
+                                  <div className={`text-2xl font-bold ${isLowest ? 'text-amber-600' : 'text-foreground'}`}>
+                                    ${item.totalPrice}
+                                  </div>
+                                  <div className="text-xs text-muted-foreground">
+                                    Base: ${item.baseRate} + Tax: ${item.taxesFees}
+                                  </div>
+                                  {item.discount && (
+                                    <div className="text-xs text-green-600 font-medium mt-0.5">
+                                      Save ${item.discount.from - item.discount.to}
+                                    </div>
+                                  )}
+                                </td>
+                                <td className="px-6 py-4 hidden xl:table-cell">
+                                  <div className="text-xs text-muted-foreground max-w-xs">
+                                    {item.context}
+                                  </div>
+                                </td>
+                                <td className="px-6 py-4 text-right">
+                                  <Button
+                                    size="sm"
+                                    variant={isLowest ? "default" : "outline"}
+                                    className={`text-sm whitespace-nowrap ${isLowest ? 'bg-amber-600 hover:bg-amber-500' : ''}`}
+                                    onClick={() => window.open(item.url, '_blank')}
+                                  >
+                                    Select Room →
+                                  </Button>
+                                </td>
+                              </motion.tr>
+                            )
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
                 )}
               </CardContent>
             </Card>
