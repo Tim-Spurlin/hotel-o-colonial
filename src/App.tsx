@@ -4,6 +4,7 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ExecutiveOverview } from '@/components/sections/ExecutiveOverview'
+import { LobbyShowcase } from '@/components/sections/LobbyShowcase'
 import { AguilarLegacy } from '@/components/sections/AguilarLegacy'
 import { LivingHeritage } from '@/components/sections/LivingHeritage'
 import { StrategicGeography } from '@/components/sections/StrategicGeography'
@@ -24,6 +25,7 @@ function App() {
       <main>
         <HeroSection />
         <ExecutiveOverview />
+        <LobbyShowcase />
         <AguilarLegacy />
         <LivingHeritage />
         <StrategicGeography />
