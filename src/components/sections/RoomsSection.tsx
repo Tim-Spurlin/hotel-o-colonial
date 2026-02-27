@@ -67,6 +67,28 @@ export function RoomsSection() {
           </p>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-16 max-w-4xl mx-auto"
+        >
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <video
+              src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772178084/grok-video-c07cc6a3-fe5f-49b6-81dd-9a21a292322d_g8bagx.mp4"
+              className="w-full h-auto"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <p className="text-white font-semibold text-lg">King Bed Room</p>
+              <p className="text-white/90 text-sm">Experience comfort and elegance in our spacious king bed accommodations</p>
+            </div>
+          </div>
+        </motion.div>
+
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {rooms.map((room, index) => (
             <motion.div
