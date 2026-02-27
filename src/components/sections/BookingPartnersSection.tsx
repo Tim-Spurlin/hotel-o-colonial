@@ -23,14 +23,11 @@ export function BookingPartnersSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
-            Reserve Your Stay with Our Trusted Partners
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
+            Book Your Stay
           </h2>
-          <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-            We partner with the best booking platforms to ensure you always get the best rate and seamless experience.
-          </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner.name}
@@ -50,16 +47,6 @@ export function BookingPartnersSection() {
                 </Card>
               </motion.div>
             ))}
-          </div>
-
-          <div className="text-center">
-            <p className="text-foreground mb-4">
-              <strong>Direct Inquiries:</strong> (956) 546-1212 | info@hotelocolonialinn.com
-            </p>
-            <p className="text-sm text-muted-foreground">
-              No direct booking engine — we partner with the best platforms so you always get the best rate 
-              and seamless experience.
-            </p>
           </div>
         </motion.div>
       </div>
