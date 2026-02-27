@@ -44,7 +44,7 @@ export function LobbyShowcase() {
                 playsInline
               >
                 <source 
-                  src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772178282/lobby-clip-edited_koehyi.mp4" 
+                  src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772178520/lobby-clip-edited_auufuw.mp4" 
                   type="video/mp4" 
                 />
                 Your browser does not support the video tag.
