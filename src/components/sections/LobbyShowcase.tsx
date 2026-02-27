@@ -16,10 +16,13 @@ export function LobbyShowcase() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <Building size={64} weight="fill" className="text-primary mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Welcome to Our Lobby
-          </h2>
+          <div className="max-w-4xl mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="https://res.cloudinary.com/dw3lf8roj/image/upload/v1772179239/grok-image-72ba5cd1-a88d-43dd-a88b-1e4c7de13392_q2r0ei.jpg"
+              alt="Hotel O Colonial Inn Lobby"
+              className="w-full h-auto object-cover"
+            />
+          </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Step into the heart of Hotel O Colonial Inn, where historic charm meets modern comfort. 
             Our lobby embodies the warm, welcoming spirit of Mexican hospitality that has defined 
