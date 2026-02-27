@@ -198,17 +198,6 @@
   color: oklch(0.72 0.15 45);
 }
 
-.section-pattern {
-  background-image: 
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      oklch(0.84 0.02 75) 10px,
-      oklch(0.84 0.02 75) 11px
-    );
-}
-
 .talavera-pattern-1 {
   background-color: oklch(0.92 0.008 75);
   background-image: 
@@ -222,22 +211,6 @@
     repeating-linear-gradient(45deg, transparent, transparent 35px, oklch(0.28 0.08 290 / 0.15) 35px, oklch(0.28 0.08 290 / 0.15) 70px),
     repeating-linear-gradient(-45deg, transparent, transparent 35px, oklch(0.38 0.02 270 / 0.12) 35px, oklch(0.38 0.02 270 / 0.12) 70px);
 }
-
-.talavera-pattern-2 {
-  background-color: oklch(0.88 0.01 75);
-  background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 50px, oklch(0.32 0.08 285 / 0.11) 50px, oklch(0.32 0.08 285 / 0.11) 52px),
-    repeating-linear-gradient(90deg, transparent, transparent 50px, oklch(0.48 0.03 265 / 0.14) 50px, oklch(0.48 0.03 265 / 0.14) 52px);
-}
-
-.dark .talavera-pattern-2 {
-  background-color: oklch(0.20 0.01 145);
-  background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 50px, oklch(0.30 0.08 285 / 0.15) 50px, oklch(0.30 0.08 285 / 0.15) 52px),
-    repeating-linear-gradient(90deg, transparent, transparent 50px, oklch(0.40 0.03 265 / 0.18) 50px, oklch(0.40 0.03 265 / 0.18) 52px);
-}
-
-
 
 .talavera-pattern-4 {
   background-color: oklch(0.88 0.01 75);
