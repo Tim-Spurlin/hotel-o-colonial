@@ -9,6 +9,7 @@ import { LivingHeritage } from '@/components/sections/LivingHeritage'
 import { StrategicGeography } from '@/components/sections/StrategicGeography'
 import { CulinaryEcosystem } from '@/components/sections/CulinaryEcosystem'
 import { RoomsSection } from '@/components/sections/RoomsSection'
+import { PricingSection } from '@/components/sections/PricingSection'
 import { ExperiencesSection } from '@/components/sections/ExperiencesSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { BookingPartnersSection } from '@/components/sections/BookingPartnersSection'
@@ -29,6 +30,7 @@ function App() {
         <StrategicGeography />
         <CulinaryEcosystem />
         <RoomsSection />
+        <PricingSection />
         <ExperiencesSection />
         <TestimonialsSection />
         <GallerySection />
