@@ -372,25 +372,7 @@ export function PricingSection() {
               </CardContent>
             </Card>
 
-            {/* AUTOMATION NOTICE */}
-            <Card className="bg-blue-50 border-blue-200">
-              <CardContent className="pt-6">
-                <div className="flex gap-4">
-                  <TrendUp size={32} weight="duotone" className="text-blue-600 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-bold text-blue-900 mb-2">
-                      Real-Time Price Intelligence Architecture
-                    </h3>
-                    <p className="text-sm text-blue-700 leading-relaxed">
-                      This pricing engine is architected for <strong>automated price updates</strong>. The data structure 
-                      supports integration with custom web scraping pipelines (Node.js + Playwright) and Server-Sent Events (SSE) 
-                      for real-time price streaming. Prices can be continuously monitored across all OTA networks and pushed to 
-                      this interface automatically as they change, with no page refresh required.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
           </motion.div>
         </div>
       </div>
