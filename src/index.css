@@ -21,13 +21,13 @@
 }
 
 :root {
-  --background: oklch(0.88 0.01 75);
+  --background: oklch(0.96 0.008 75);
   --foreground: oklch(0.22 0.01 145);
   
-  --card: oklch(0.92 0.008 75);
+  --card: oklch(0.98 0.005 75);
   --card-foreground: oklch(0.22 0.01 145);
   
-  --popover: oklch(0.92 0.008 75);
+  --popover: oklch(0.98 0.005 75);
   --popover-foreground: oklch(0.22 0.01 145);
   
   --primary: oklch(0.42 0.12 35);
@@ -198,32 +198,126 @@
   color: oklch(0.72 0.15 45);
 }
 
+.elegant-texture-bg {
+  background: 
+    linear-gradient(135deg, oklch(0.96 0.008 75) 0%, oklch(0.94 0.012 70) 50%, oklch(0.96 0.008 80) 100%);
+}
+
+.dark .elegant-texture-bg {
+  background: 
+    linear-gradient(135deg, oklch(0.18 0.01 145) 0%, oklch(0.16 0.015 140) 50%, oklch(0.18 0.01 150) 100%);
+}
+
+.subtle-shimmer-bg {
+  background: 
+    radial-gradient(circle at 20% 30%, oklch(0.97 0.01 75 / 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, oklch(0.68 0.15 75 / 0.15) 0%, transparent 50%),
+    oklch(0.96 0.008 75);
+}
+
+.dark .subtle-shimmer-bg {
+  background: 
+    radial-gradient(circle at 20% 30%, oklch(0.25 0.02 145 / 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, oklch(0.42 0.12 35 / 0.1) 0%, transparent 50%),
+    oklch(0.18 0.01 145);
+}
+
+.warm-gradient-overlay {
+  background: 
+    linear-gradient(180deg, 
+      oklch(0.98 0.005 75 / 0.8) 0%, 
+      oklch(0.95 0.01 70 / 0.95) 50%, 
+      oklch(0.97 0.008 80 / 0.85) 100%
+    );
+}
+
+.dark .warm-gradient-overlay {
+  background: 
+    linear-gradient(180deg, 
+      oklch(0.20 0.012 145 / 0.9) 0%, 
+      oklch(0.17 0.015 140 / 0.95) 50%, 
+      oklch(0.19 0.01 150 / 0.9) 100%
+    );
+}
+
+.luxe-section-bg {
+  background: 
+    linear-gradient(to bottom, 
+      oklch(0.97 0.008 75) 0%, 
+      oklch(0.96 0.01 72) 100%
+    );
+  backdrop-filter: blur(10px);
+}
+
+.dark .luxe-section-bg {
+  background: 
+    linear-gradient(to bottom, 
+      oklch(0.19 0.012 145) 0%, 
+      oklch(0.17 0.015 142) 100%
+    );
+  backdrop-filter: blur(10px);
+}
+
+.golden-hour-gradient {
+  background: 
+    linear-gradient(135deg, 
+      oklch(0.96 0.01 75) 0%, 
+      oklch(0.94 0.015 70) 25%,
+      oklch(0.68 0.15 75 / 0.15) 50%,
+      oklch(0.96 0.01 80) 100%
+    );
+}
+
+.dark .golden-hour-gradient {
+  background: 
+    linear-gradient(135deg, 
+      oklch(0.18 0.012 145) 0%, 
+      oklch(0.16 0.018 140) 25%,
+      oklch(0.42 0.12 35 / 0.12) 50%,
+      oklch(0.18 0.01 150) 100%
+    );
+}
+
+.soft-vignette-bg {
+  background: 
+    radial-gradient(ellipse at center, 
+      oklch(0.97 0.008 75) 0%, 
+      oklch(0.95 0.012 72) 60%,
+      oklch(0.93 0.015 70) 100%
+    );
+}
+
+.dark .soft-vignette-bg {
+  background: 
+    radial-gradient(ellipse at center, 
+      oklch(0.20 0.012 145) 0%, 
+      oklch(0.18 0.015 142) 60%,
+      oklch(0.16 0.018 140) 100%
+    );
+}
+
 .talavera-pattern-1 {
-  background-color: oklch(0.92 0.008 75);
-  background-image: 
-    repeating-linear-gradient(45deg, transparent, transparent 35px, oklch(0.35 0.08 290 / 0.12) 35px, oklch(0.35 0.08 290 / 0.12) 70px),
-    repeating-linear-gradient(-45deg, transparent, transparent 35px, oklch(0.45 0.02 270 / 0.09) 35px, oklch(0.45 0.02 270 / 0.09) 70px);
+  background: 
+    linear-gradient(135deg, oklch(0.96 0.008 75) 0%, oklch(0.94 0.012 70) 100%);
 }
 
 .dark .talavera-pattern-1 {
-  background-color: oklch(0.18 0.01 145);
-  background-image: 
-    repeating-linear-gradient(45deg, transparent, transparent 35px, oklch(0.28 0.08 290 / 0.15) 35px, oklch(0.28 0.08 290 / 0.15) 70px),
-    repeating-linear-gradient(-45deg, transparent, transparent 35px, oklch(0.38 0.02 270 / 0.12) 35px, oklch(0.38 0.02 270 / 0.12) 70px);
+  background: 
+    linear-gradient(135deg, oklch(0.18 0.01 145) 0%, oklch(0.16 0.015 140) 100%);
 }
 
 .talavera-pattern-4 {
-  background-color: oklch(0.88 0.01 75);
-  background-image: 
-    repeating-linear-gradient(45deg, transparent, transparent 25px, oklch(0.34 0.09 292 / 0.16) 25px, oklch(0.34 0.09 292 / 0.16) 50px),
-    repeating-linear-gradient(-45deg, transparent, transparent 25px, oklch(0.44 0.03 272 / 0.16) 25px, oklch(0.44 0.03 272 / 0.16) 50px);
+  background: 
+    radial-gradient(circle at 30% 50%, oklch(0.97 0.01 75 / 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 70% 50%, oklch(0.68 0.15 75 / 0.2) 0%, transparent 40%),
+    oklch(0.96 0.008 75);
 }
 
 .dark .talavera-pattern-4 {
-  background-color: oklch(0.19 0.01 145);
-  background-image: 
-    repeating-linear-gradient(45deg, transparent, transparent 25px, oklch(0.30 0.09 292 / 0.20) 25px, oklch(0.30 0.09 292 / 0.20) 50px),
-    repeating-linear-gradient(-45deg, transparent, transparent 25px, oklch(0.40 0.03 272 / 0.20) 25px, oklch(0.40 0.03 272 / 0.20) 50px);
+  background: 
+    radial-gradient(circle at 30% 50%, oklch(0.25 0.02 145 / 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 70% 50%, oklch(0.42 0.12 35 / 0.15) 0%, transparent 40%),
+    oklch(0.18 0.01 145);
 }
 
 
