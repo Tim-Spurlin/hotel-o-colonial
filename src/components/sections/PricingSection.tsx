@@ -404,7 +404,9 @@ export function PricingSection() {
                 )}
               </CardContent>
             </Card>
+          </motion.div>
+        </div>
       </div>
     </section>
-      </div>
-    </section>
+  )
+}
