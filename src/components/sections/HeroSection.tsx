@@ -46,7 +46,7 @@ export function HeroSection() {
           className="max-w-5xl"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-            A Hidden Pocket of Mexico in the Heart of Historic Brownsville
+            Hotel O Colonial Inn
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-3xl mx-auto">
             Where 170 years of architectural heritage meets the intimate warmth of Mexican hospitality,
