@@ -1,0 +1,21 @@
+name: Copilot setup steps
+
+on:
+  workflow_call:
+    secrets: inherit
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare-agent-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure isolated branch for Copilot agent
+        run: |
+          BRANCH_NAME="copilot/${GITHUB_RUN_ID}-${GITHUB_SHA}"
+          echo "COPILOT_AGENT_BRANCH_NAME=${BRANCH_NAME}" >> "$GITHUB_ENV"
+          echo "COPILOT_AGENT_BASE_COMMIT=main" >> "$GITHUB_ENV"
+          echo "COPILOT_AGENT_PR_BASE=main" >> "$GITHUB_ENV"
+          echo "Configured Copilot agent to use branch ${BRANCH_NAME} instead of pushing to protected main."
