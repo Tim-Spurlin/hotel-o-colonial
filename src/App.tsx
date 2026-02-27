@@ -13,7 +13,6 @@ import { RoomsSection } from '@/components/sections/RoomsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
 import { ExperiencesSection } from '@/components/sections/ExperiencesSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
-import { BookingPartnersSection } from '@/components/sections/BookingPartnersSection'
 import { GallerySection } from '@/components/sections/GallerySection'
 import { Toaster } from '@/components/ui/sonner'
 
@@ -34,7 +33,6 @@ function App() {
         <ExperiencesSection />
         <TestimonialsSection />
         <GallerySection />
-        <BookingPartnersSection />
       </main>
 
       <Footer />

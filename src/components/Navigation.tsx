@@ -62,7 +62,7 @@ export function Navigation() {
           <div className="hidden lg:flex items-center gap-3">
             <ThemeToggle />
             <Button 
-              onClick={() => handleNavClick('#book')}
+              onClick={() => handleNavClick('#pricing')}
               className="bg-primary hover:bg-secondary hover:text-foreground transition-colors"
             >
               Book Your Stay
@@ -93,7 +93,7 @@ export function Navigation() {
                   </button>
                 ))}
                 <Button 
-                  onClick={() => handleNavClick('#book')}
+                  onClick={() => handleNavClick('#pricing')}
                   className="bg-primary hover:bg-secondary hover:text-foreground mt-4"
                 >
                   Book Your Stay
