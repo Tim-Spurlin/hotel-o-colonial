@@ -30,13 +30,19 @@ export function HeroSection() {
       <div 
         ref={parallaxRef}
         className="absolute inset-0 parallax-bg"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dw3lf8roj/image/upload/v1772179239/grok-image-72ba5cd1-a88d-43dd-a88b-1e4c7de13392_q2r0ei.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '120%'
-        }}
-      />
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ height: '120%' }}
+        >
+          <source src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772178520/lobby-clip-edited_auufuw.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/40" />
+      </div>
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
         <motion.div
