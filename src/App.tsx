@@ -25,7 +25,6 @@ function App() {
       <main>
         <HeroSection />
         <ExecutiveOverview />
-        <LobbyShowcase />
         <AguilarLegacy />
         <LivingHeritage />
         <StrategicGeography />

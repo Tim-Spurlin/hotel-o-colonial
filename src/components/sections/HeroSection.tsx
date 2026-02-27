@@ -1,10 +1,35 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { CaretDown } from '@phosphor-icons/react'
+import { CaretDown, CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
+
+const carouselItems = [
+  {
+    type: 'video',
+    src: 'https://res.cloudinary.com/dw3lf8roj/video/upload/v1772178520/lobby-clip-edited_auufuw.mp4',
+    alt: 'Hotel O Colonial Inn - Main Cover'
+  },
+  {
+    type: 'image',
+    src: 'https://res.cloudinary.com/dw3lf8roj/image/upload/v1772179239/grok-image-72ba5cd1-a88d-43dd-a88b-1e4c7de13392_q2r0ei.jpg',
+    alt: 'Hotel O Colonial Inn Building'
+  },
+  {
+    type: 'image',
+    src: 'https://res.cloudinary.com/dw3lf8roj/image/upload/v1772177059/Screenshot_20260226_073936_meilbo.png',
+    alt: 'Hotel O Colonial Inn'
+  },
+  {
+    type: 'video',
+    src: 'https://res.cloudinary.com/dw3lf8roj/video/upload/v1772177730/grok-video-285aa30a-b4b8-49ce-882a-09e4fe1608f9_lkps7v.mp4',
+    alt: 'Hotel Lobby Video'
+  }
+]
 
 export function HeroSection() {
   const parallaxRef = useRef<HTMLDivElement>(null)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +43,31 @@ export function HeroSection() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (video) {
+        if (index === currentSlide) {
+          video.play()
+        } else {
+          video.pause()
+        }
+      }
+    })
+  }, [currentSlide])
+
   const handleScrollToNext = () => {
     const element = document.querySelector('#story')
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselItems.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + carouselItems.length) % carouselItems.length)
   }
 
   return (
@@ -31,17 +76,66 @@ export function HeroSection() {
         ref={parallaxRef}
         className="absolute inset-0 parallax-bg"
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ height: '120%' }}
-        >
-          <source src="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772178520/lobby-clip-edited_auufuw.mp4" type="video/mp4" />
-        </video>
+        {carouselItems.map((item, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            {item.type === 'video' ? (
+              <video
+                ref={(el) => {
+                  videoRefs.current[index] = el
+                }}
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ height: '120%' }}
+              >
+                <source src={item.src} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ height: '120%' }}
+              />
+            )}
+          </div>
+        ))}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/40" />
+      </div>
+
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-sm transition-colors"
+        aria-label="Previous slide"
+      >
+        <CaretLeft size={32} weight="bold" />
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-sm transition-colors"
+        aria-label="Next slide"
+      >
+        <CaretRight size={32} weight="bold" />
+      </button>
+
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {carouselItems.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all ${
+              index === currentSlide ? 'bg-white w-8' : 'bg-white/50'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
