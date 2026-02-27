@@ -45,7 +45,7 @@ export function GallerySection() {
               ref={videoRef}
               className="w-full h-auto"
               controls
-              poster="https://res.cloudinary.com/dw3lf8roj/video/upload/v1772185898/hotel-o-colonial_uvugyy.jpg"
+              poster="https://res.cloudinary.com/dw3lf8roj/image/upload/v1772186798/grok-image-89711c45-1c02-4f2a-b2c5-2cf5184a2755_hnipts.jpg"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
             >
