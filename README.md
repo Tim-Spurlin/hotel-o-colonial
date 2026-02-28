@@ -42,6 +42,7 @@
 
 ## Book now
 Primary booking partners (open in a new tab):
+- 🌐 **Main website** — https://hotel-o-colonial-website.web.app/
 - 🧡 **OYO Direct (best dynamic yields & drip pricing)** — https://www.oyorooms.com/us/317185/
 - 🔵 **Booking.com** — https://www.booking.com/hotel/us/colonial-brownsville.html
 - 🧭 **Expedia / Orbitz / Travelocity** — https://www.expedia.com/Brownsville-Hotels-Colonial-Hotel.h994435.Hotel-Information
