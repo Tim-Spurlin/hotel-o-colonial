@@ -119,26 +119,6 @@ export const pricingData: RoomPricing[] = [
     url: "https://www.hotels.com/ho32821920/"
   },
   {
-    platform: "Booking.com",
-    network: "Booking Holdings",
-    room: "1 King Bed",
-    baseRate: 59,
-    taxesFees: 12,
-    totalPrice: 71,
-    context: "Genius Rate Available • Free Cancellation",
-    url: "https://www.booking.com/hotel/us/colonial-brownsville.html"
-  },
-  {
-    platform: "Booking.com",
-    network: "Booking Holdings",
-    room: "2 Queen Beds",
-    baseRate: 64,
-    taxesFees: 14,
-    totalPrice: 78,
-    context: "Genius Rate Available • Free Cancellation",
-    url: "https://www.booking.com/hotel/us/colonial-brownsville.html"
-  },
-  {
     platform: "Agoda",
     network: "Booking Holdings",
     room: "1 King Bed",
