@@ -145,8 +145,8 @@ export const pricingData: RoomPricing[] = [
     baseRate: 58,
     taxesFees: 12,
     totalPrice: 70,
-    context: "Prepaid Rate • Save More",
-    url: "https://www.agoda.com/hotel-o-colonial-inn-brownsville-tx/hotel/brownsville-tx-us.html"
+    context: "Non-Smoking • Prepaid Rate • Save More",
+    url: "https://www.agoda.com/hotel-o-colonial-inn-brownsville-tx/hotel/brownsville-tx-us.html?countryId=181&finalPriceView=1&isShowMobileAppPrice=false&cid=1763347&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2026-03-9&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&los=2&searchrequestid=913e9c17-9cea-4f12-bb80-e5f4746e0c0c"
   },
   {
     platform: "Agoda",
@@ -185,8 +185,8 @@ export const pricingData: RoomPricing[] = [
     baseRate: 49,
     taxesFees: 11,
     totalPrice: 60,
-    context: "Standard Rate • Price Match",
-    url: "https://www.travelocity.com/Brownsville-Hotels.d6058982.Travel-Guide-Hotels"
+    context: "Non-Smoking • Standard Rate • Price Match",
+    url: "https://www.travelocity.com/Brownsville-Hotels-Colonial-Hotel.h994435.Hotel-Information?chkin=2026-03-21&chkout=2026-03-22&x_pwa=1&rfrr=HSR&pwa_ts=1772925816163&referrerUrl=aHR0cHM6Ly93d3cudHJhdmVsb2NpdHkuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&regionId=6058982&destination=Brownsville%2C%20Texas%2C%20United%20States%20of%20America&destType=MARKET&latLong=25.902981%2C-97.497437&sort=PRICE_LOW_TO_HIGH&top_dp=64&top_cur=USD&userIntent=&selectedRoomType=326918596&selectedRatePlan=403218943&searchId=08cae88f-cc27-45e8-8219-6d1247bf65a5&propertyUnitRoomInfoDialog=room-info-326918596"
   },
   {
     platform: "Trivago",
