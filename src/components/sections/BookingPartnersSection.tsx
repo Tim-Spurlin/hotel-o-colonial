@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/card'
 const partners = [
   { name: 'OYO Rooms', url: 'https://www.oyorooms.com/us/317185/' },
   { name: 'Hotels-Texas', url: 'https://ocolonialtx.hotels-texas.com/en/' },
-  { name: 'Booking.com', url: 'https://www.booking.com/hotel/us/colonial-brownsville.html' },
+  { name: 'Booking.com', url: 'https://www.booking.com/hotel/us/colonial-brownsville.html?aid=304142&label=gen173bo-10CAQoggJCMHNlYXJjaF90ZXhhcyBpbm4gYnJvd25zdmlsbGUgYnkgaG90ZWwgbyBjb2xvbmlhbEgzWANosAKIAQGYATO4ARnIAQzYAQPoAQH4AQGIAgGYAgKoAgG4Aunwss0GwAIB0gIkY2NjN2YyNGEtNThjMC00Yjg4LTk2MTEtYjMzMjU2MWQwM2Fh2AIB4AIB&ucfs=1&arphpl=1&ucfac=3151' },
 ]
 
 export function BookingPartnersSection() {
