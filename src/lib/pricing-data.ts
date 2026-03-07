@@ -22,7 +22,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 11,
     totalPrice: 54,
     context: "Non-Smoking • Discounted from $69 rack rate",
-    url: "https://www.oyorooms.com/us/317185/",
+    url: "https://www.oyorooms.com/us/317185/?selected_rcid=284816",
     discount: { from: 69, to: 43 }
   },
   {
@@ -33,7 +33,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 12,
     totalPrice: 59,
     context: "Non-Smoking • Discounted from $73 rack rate",
-    url: "https://www.oyorooms.com/us/317185/",
+    url: "https://www.oyorooms.com/us/317185/?selected_rcid=284817",
     discount: { from: 73, to: 47 }
   },
   {
@@ -66,7 +66,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 11,
     totalPrice: 60,
     context: "Non-Refundable • Sleeps 2",
-    url: "https://www.expedia.com/Brownsville-Hotels-Colonial-Hotel.h994435.Hotel-Information"
+    url: "https://www.expedia.com/Brownsville-Hotels-Colonial-Hotel.h994435.Hotel-Information?chkin=2026-03-13&chkout=2026-03-15&x_pwa=1&rfrr=HSR&pwa_ts=1772925332699&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=true&rm1=a2&regionId=6058982&destination=Brownsville%2C%20Texas%2C%20United%20States%20of%20America&destType=MARKET&selected=994435&latLong=25.902981%2C-97.497437&sort=RECOMMENDED&top_dp=107&top_cur=USD&userIntent=&selectedRoomType=326918596&selectedRatePlan=403218943&searchId=0152d232-f11f-4374-8a3a-6fa5eee789aa&propertyUnitRoomInfoDialog=room-info-326918596"
   },
   {
     platform: "Expedia",
@@ -106,7 +106,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 11,
     totalPrice: 60,
     context: "Collect Stamps • Rewards Program",
-    url: "https://www.hotels.com/ho32821920/"
+    url: "https://www.hotels.com/ho32821920/?propertyUnitRoomInfoDialog=room-info-326918596"
   },
   {
     platform: "Hotels.com",
@@ -166,7 +166,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 10,
     totalPrice: 56,
     context: "Express Deal • Limited Availability",
-    url: "https://www.priceline.com/"
+    url: "https://www.priceline.com/relax/at/600009707/from/20260307/to/20260308/rooms/1?pclnId=0E5201FADC628A409C1D6DA61E31986FDFBDF84FC3212F9F82D74470BA6D74DA7A46945211F8E27A205CBFE3D892FD7485A77F92FF57234F83520BE009A2ECB2120143EB2C8912BD56E6E2587A86B21B62B421FE3EC636F7&gid=2843&cityId=3000020948&cur=USD&backlink-id=dm0y9fxieic&qdp=53"
   },
   {
     platform: "Orbitz",
@@ -196,7 +196,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 11,
     totalPrice: 54,
     context: "Redirects to OYO • Comparison Tool",
-    url: "https://www.trivago.com/"
+    url: "https://www.trivago.com/en-US/lm/hotel-o-colonial-inn-brownsville-tx?search=100-426526;dr-20260307-20260308;drs-40;rc-1-2#::hasInteracted=true"
   },
   {
     platform: "Kayak",
@@ -206,7 +206,7 @@ export const pricingData: RoomPricing[] = [
     taxesFees: 10,
     totalPrice: 56,
     context: "Redirects to Multiple • Comparison Tool",
-    url: "https://www.kayak.com/"
+    url: "https://www.kayak.com/hotels/Hotel-O-Colonial-Inn-Brownsville-Tx,Brownsville-p56672-h66036-details/2026-03-08/2026-03-09/1adults?psid=xkAEFgdsVR&pm=nightly-base"
   },
 ]
 
