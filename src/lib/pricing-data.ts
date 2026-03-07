@@ -119,6 +119,46 @@ export const pricingData: RoomPricing[] = [
     url: "https://www.hotels.com/ho32821920/"
   },
   {
+    platform: "Booking.com",
+    network: "Booking Holdings",
+    room: "1 King Bed",
+    baseRate: 59,
+    taxesFees: 13,
+    totalPrice: 72,
+    context: "Non-Smoking • Genius Rate Available",
+    url: "https://www.booking.com/hotel/us/colonial-brownsville.html?aid=304142&label=gen173bo-10CAQoggJCMHNlYXJjaF90ZXhhcyBpbm4gYnJvd25zdmlsbGUgYnkgaG90ZWwgbyBjb2xvbmlhbEgzWANosAKIAQGYATO4ARnIAQzYAQPoAQH4AQGIAgGYAgKoAgG4Aunwss0GwAIB0gIkY2NjN2YyNGEtNThjMC00Yjg4LTk2MTEtYjMzMjU2MWQwM2Fh2AIB4AIB&ucfs=1&arphpl=1&ucfac=3151"
+  },
+  {
+    platform: "Booking.com",
+    network: "Booking Holdings",
+    room: "1 Full Bed",
+    baseRate: 61,
+    taxesFees: 13,
+    totalPrice: 74,
+    context: "Non-Smoking • Flexible Cancellation",
+    url: "https://www.booking.com/hotel/us/colonial-brownsville.html?aid=304142&label=gen173bo-10CAQoggJCMHNlYXJjaF90ZXhhcyBpbm4gYnJvd25zdmlsbGUgYnkgaG90ZWwgbyBjb2xvbmlhbEgzWANosAKIAQGYATO4ARnIAQzYAQPoAQH4AQGIAgGYAgKoAgG4Aunwss0GwAIB0gIkY2NjN2YyNGEtNThjMC00Yjg4LTk2MTEtYjMzMjU2MWQwM2Fh2AIB4AIB&ucfs=1&arphpl=1&ucfac=3151"
+  },
+  {
+    platform: "Booking.com",
+    network: "Booking Holdings",
+    room: "2 Full Beds",
+    baseRate: 63,
+    taxesFees: 14,
+    totalPrice: 77,
+    context: "Non-Smoking • Sleeps 4 • Free WiFi",
+    url: "https://www.booking.com/hotel/us/colonial-brownsville.html?aid=304142&label=gen173bo-10CAQoggJCMHNlYXJjaF90ZXhhcyBpbm4gYnJvd25zdmlsbGUgYnkgaG90ZWwgbyBjb2xvbmlhbEgzWANosAKIAQGYATO4ARnIAQzYAQPoAQH4AQGIAgGYAgKoAgG4Aunwss0GwAIB0gIkY2NjN2YyNGEtNThjMC00Yjg4LTk2MTEtYjMzMjU2MWQwM2Fh2AIB4AIB&ucfs=1&arphpl=1&ucfac=3151"
+  },
+  {
+    platform: "Booking.com",
+    network: "Booking Holdings",
+    room: "2 Queen Beds",
+    baseRate: 64,
+    taxesFees: 14,
+    totalPrice: 78,
+    context: "Non-Smoking • Genius Rate Available • Sleeps 4",
+    url: "https://www.booking.com/hotel/us/colonial-brownsville.html?aid=304142&label=gen173bo-10CAQoggJCMHNlYXJjaF90ZXhhcyBpbm4gYnJvd25zdmlsbGUgYnkgaG90ZWwgbyBjb2xvbmlhbEgzWANosAKIAQGYATO4ARnIAQzYAQPoAQH4AQGIAgGYAgKoAgG4Aunwss0GwAIB0gIkY2NjN2YyNGEtNThjMC00Yjg4LTk2MTEtYjMzMjU2MWQwM2Fh2AIB4AIB&ucfs=1&arphpl=1&ucfac=3151"
+  },
+  {
     platform: "Agoda",
     network: "Booking Holdings",
     room: "1 King Bed",
@@ -135,7 +175,7 @@ export const pricingData: RoomPricing[] = [
     baseRate: 62,
     taxesFees: 13,
     totalPrice: 75,
-    context: "Prepaid Rate • Save More",
+    context: "Non-Smoking • Prepaid Rate • Save More",
     url: "https://www.agoda.com/hotel-o-colonial-inn-brownsville-tx/hotel/brownsville-tx-us.html"
   },
   {
